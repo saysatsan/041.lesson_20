@@ -2,7 +2,7 @@
 
 ## The project was deployed on the GitHub page using the [link](https://saysatsan.github.io/041.lesson_20/)
 
-##TASK
+## TASK
 
 Вивести список символів у вигляді таблиці.
 
