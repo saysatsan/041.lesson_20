@@ -1,6 +1,6 @@
 # 041.lesson_20
 
-## The project was deployed on the GitHub page using the [link](https://saysatsan.github.io/41.lesson_20/)
+## The project was deployed on the GitHub page using the [link](https://saysatsan.github.io/041.lesson_20/)
 
 ##TASK
 Вивести список символів у вигляді таблиці.
