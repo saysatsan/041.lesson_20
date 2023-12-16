@@ -4,40 +4,39 @@
 
 ## TASK
 
-Вивести список символів у вигляді таблиці.
+Display the list of characters in the form of a table.
 
-Ви можете створити таблиці самостійно на сайті:
+You can create tables yourself on the website:
 
 https://mockapi.io/projects
 
-Приклад об’єкта ресурсу для «heroes» (шлях має бути «heroes»):
+Example resource object for"heroes" (the path should be "heroes"):
 
 {
-  "name": "Залізна людина",
-  "comics": "Марвел",
-  "улюблений": правда,
+  "name": "Iron Man",
+  "comics": "Marvel",
+  "favourite": true,
   "id": "1"
 }
-Приклад об'єкта ресурсу для "всесвітів":
+Example resource object for "universes":
 
 {
   "id": "1",
   "name": "Marvel"
 }
-Таблиця складається з 4 колонок:
+The table consists of 4 columns:
 
-Ім'я прізвище
-Комікси (DC, Marvel, Comix Zone)
-Вибране (прапорець)
-Дії (кнопка Видалити)
-Над таблицею є форма з трьома полями для додавання нового символу:
+Name Surname
+Comics (DC, Marvel, Comix Zone)
+Favourite (checkbox)
+Actions (Delete button)
+Above the table, there's a form with three fields for adding a new character:
 
-Ім'я Прізвище (введення)
-Комікси (DC, Marvel, Comix Zone) (вибрати) – дані отримані за допомогою методу GET із ресурсу "всесвіти"
-Вибране (true, false) (прапорець)
-Дії:
+Name Surname (input)
+Comics (DC, Marvel, Comix Zone) (select) – data retrieved using the GET method from the "universes" resource
+Favourite (true, false) (checkbox)
+Actions:
 
-Після надсилання форми персонаж додається до бази даних (POST), а інформація про героя відображається в рядку HTML у таблиці. Якщо герой із такою ж властивістю «ім’я» вже існує в базі даних, об’єкт не додається до бази даних (ви можете просто записати повідомлення на консоль про те, що користувач із таким ім’ям уже існує в базі даних).
-Коли стан прапорця в стовпці «Вибране» змінюється, дані для цього персонажа оновлюються в базі даних (PUT).
-Після натискання кнопки Видалити в рядку персонажа відповідний герой видаляється з бази даних (DELETE), а відповідний <tr>елемент – із таблиці.
-Базовий макет надається у вкладеному архіві "heroes.zip".
+Upon form submission, the character is added to the database (POST), and the information about the hero is displayed in an HTML row in the table. If a hero with the same "name" property already exists in the database, the object is not added to the database (you can simply log a message to the console stating that a user with that name already exists in the database).
+When the checkbox state in the "Favourite" column is changed, the data for that character is updated in the database (PUT).
+Upon clicking the Delete button in the character's row, the corresponding hero is removed from the database (DELETE), and the corresponding <tr> element is removed from the table.
